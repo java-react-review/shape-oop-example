@@ -1,6 +1,7 @@
 package dev.rehm;
 
 public abstract class Shape implements Calculable {
+
     private String color;
 
     Shape(){

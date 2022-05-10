@@ -6,6 +6,7 @@ public class Circle extends Shape {
 
     private double radius;
 
+    // by having two constructors with different sets of arguments, we see overloading, an example of polymorphism
     public Circle(){
         super();
     }
@@ -23,6 +24,14 @@ public class Circle extends Shape {
         if(radius>0){
             this.radius = radius;
         }
+    }
+
+    // we are overriding the Object class' implementation of the toString method (another example of polymorphism)
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius + ", color=" +getColor() +
+                '}';
     }
 
     @Override
